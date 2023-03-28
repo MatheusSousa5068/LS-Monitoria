@@ -1,3 +1,12 @@
+/* 
+    Feito em: 27/03/23
+    Por: Matheus Sousa e Amanda Cruz
+
+    link do exercício:
+    https://ifpb.github.io/exercises/problems/object-company/
+
+*/
+
 const companies = [
     {
         "name": "Amazon",
@@ -17,7 +26,9 @@ const companies = [
 ];
 
 for(let company of companies) {
+    // adiciona o atributo kind a cada compania
     company.kind = "Internet company";
 
+    // printa formatado
     console.log(`${company.name.padEnd(15, '.')}${company.founded}`)
 }
